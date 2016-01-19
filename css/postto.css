@@ -14,7 +14,6 @@
 .hnpost__input,
 .hnpost__button {
   width: 100%;
-  height: 40px;
   line-height: 40px;
   font-size: 14px;
 }
@@ -25,13 +24,15 @@
   border: none;
 }
 
-.hnpost__input:focus {
-  outline: none;
-}
-
 .hnpost__button {
   display: block;
   background-color: lightgrey;
   padding: 6px 0;
   color: rgb(0, 0, 0);
+  border: none;
+}
+
+.hnpost__input:focus,
+.hnpost__button:focus {
+  outline: none;
 }

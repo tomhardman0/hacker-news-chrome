@@ -1,6 +1,7 @@
 var button = document.querySelector('.js-click');
+var form = document.querySelector('.js-form');
 
-button.onclick = function(e) {
+form.onsubmit = function(e) {
 
     e.preventDefault();
     var title = document.querySelector('.js-title').value;
