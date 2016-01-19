@@ -3,12 +3,12 @@
   font-variant: small-caps;
   background-color: rgb(255, 102, 0);
   text-align: center;
-  width: 220px;
+  width: 232px;
   margin: 0;
 }
 
 .hnpost__header {
-  margin: 20px 10px;
+  margin: 20px 16px;
 }
 
 .hnpost__input,
