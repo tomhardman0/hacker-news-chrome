@@ -1,6 +1,7 @@
 var button = document.querySelector('.js-click');
 
 button.onclick = function(e) {
+
     e.preventDefault();
     var title = document.querySelector('.js-title').value;
 
