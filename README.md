@@ -4,6 +4,6 @@ Chrome extension for submitting links to Hacker News.
 
 # Roadmap
 
-- [ ] Tart up front end (currently no css)
+- [x] Tart up front end (very simple.)
 - [ ] Add example
 - [ ] Publish

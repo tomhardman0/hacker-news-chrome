@@ -1,13 +1,11 @@
 {
   "manifest_version": 2,
-
   "name": "Post to Hacker News",
   "description": "This extension shares your current page directly to Hacker News.",
   "version": "0.0.1",
-
   "browser_action": {
     "default_icon": "postto.png",
-    "default_popup": "postto.html"
+    "default_popup": "html/postto.html"
   },
   "permissions": [
     "activeTab",

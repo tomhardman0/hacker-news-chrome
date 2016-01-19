@@ -1,8 +1,8 @@
-var button = document.querySelector('.clickToPost');
+var button = document.querySelector('.js-click');
 
-button.onclick = function() {
-
-    var title = document.querySelector('.titleToPost').value;
+button.onclick = function(e) {
+    e.preventDefault();
+    var title = document.querySelector('.js-title').value;
 
     chrome.tabs.query({ currentWindow: true, active: true }, function(tab) {
 
@@ -13,6 +13,10 @@ button.onclick = function() {
         var url = 'http://news.ycombinator.com/submitlink?u=' + toPost + '&t=' + title;
 
         chrome.tabs.update({ url: url });
+        button.innerHTML = 'Loading...';
+        setTimeout(function() {
+            window.close();
+        }, 500);
 
     });
 
