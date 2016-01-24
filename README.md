@@ -4,7 +4,7 @@ Chrome extension for submitting links to Hacker News. Download and install from 
 
 ![Example gif of Post to Hacker News chrome extension](http://i.imgur.com/N7ybXdy.gif)
 
-# Versions
+# Changelog
 
 ## 0.0.2
 
