@@ -19,17 +19,19 @@ form.onsubmit = function(e) {
 
     e.preventDefault();
     var title = document.querySelector('.js-title').value;
+    var encodedTitle;
 
     chrome.tabs.query({ currentWindow: true, active: true }, function(tab) {
 
-        var toPost = encodeURIComponent(tab[0].url);
-        title = title === '' ? tab[0].title : title;
-        title = encodeURIComponent(title);
+        var linkToPost = encodeURIComponent(tab[0].url);
 
-        var url = 'http://news.ycombinator.com/submitlink?u=' + toPost + '&t=' + title;
+        title = title === '' ? tab[0].title : title;
+        encodedTitle = encodeURIComponent(title);
+
+        var url = 'http://news.ycombinator.com/submitlink?u=' + linkToPost + '&t=' + encodedTitle;
 
         // Track event with GA
-        var gaEvent = decodeURIComponent(title) + ': ' + url;
+        var gaEvent = title + ': ' + url;
         _gaq.push(['_trackEvent', gaEvent, 'submitted']);
 
         // Direct the tab to the prepopulated Hacker
