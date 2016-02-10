@@ -6,6 +6,10 @@ Chrome extension for submitting links to Hacker News. Download and install from 
 
 # Changelog
 
+## 0.0.3
+
+- Remove unnecessary function call to `decodeURIComponent`. 
+
 ## 0.0.2
 
 - Fix input so it doesn't extend beyond it's container when full.
